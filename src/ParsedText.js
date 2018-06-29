@@ -76,6 +76,7 @@ class ParsedText extends React.Component {
     let baseProps = {...this.props};
     delete baseProps.childrenProps;
     delete baseProps.parse;
+    delete baseProps.renderText;
     return (
       <ReactNative.Text
         ref={ref => this._root = ref}
